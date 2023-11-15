@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border:1px solid red;
 }
 
 /* header */
@@ -9,9 +12,75 @@ header{
     text-align: center;
 }
 html{
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 
 h1{
     color: #E53170;
+    line-height: 300%;
+}
+
+header p{
+    line-height: 140%;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* container with 2 rows of cards inside */
+.container, header{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* float reset */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* individual card */
+.card{
+    float: left;
+    width: calc(100% / 3);
+    height: 110px;
+    /* min-width: 300px; To adjust  */
+    margin-bottom: 40px;
+    background-color: #0F0E17;
+}
+
+/* image container */
+.inner-img{
+    height: 100%;
+    width: 110px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    float: left;
+}
+
+/* cards images */
+.male1{
+    background-image: url(./img/male1.png);
+}
+.male2{
+    background-image: url(./img/male2.png);
+}
+.male3{
+    background-image: url(./img/male3.png);
+}
+.female1{
+    background-image: url(./img/female1.png);
+}
+.female2{
+    background-image: url(./img/female2.png);
+}
+.female3{
+    background-image: url(./img/female3.png);
+}
+
+/* just a test to see how the text displays */
+div .card p{
+    color: white;
 }
