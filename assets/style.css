@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border:1px solid red;
 }
 
 /* header */
@@ -32,6 +31,7 @@ header p{
     margin: 0 auto;
 }
 
+
 /* float reset */
 .clearfix::after{
     content: "";
@@ -41,23 +41,29 @@ header p{
 
 
 /* individual card */
+.row{
+    width: 100%;
+}
+
 .card{
     float: left;
+    /* margin-inline: 0.8em; */
     width: calc(100% / 3);
-    height: 110px;
-    /* min-width: 300px; To adjust  */
-    margin-bottom: 40px;
+    height: 100px;
+    min-width: 320px; 
+    margin-block: 20px;
     background-color: #0F0E17;
+    color: white;
 }
 
 /* image container */
 .inner-img{
     height: 100%;
-    width: 110px;
+    width: 100px;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
-    float: left;
+    float:left;
 }
 
 /* cards images */
@@ -80,7 +86,24 @@ header p{
     background-image: url(./img/female3.png);
 }
 
-/* just a test to see how the text displays */
-div .card p{
-    color: white;
+address a{
+    color: #2FAADD;
+    font-style: normal;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+.info{
+    margin-left: 120px;
+    height: 100%;
+    padding-block: 10px;
+}
+.info a{
+    text-decoration: none;
+}
+.info span{
+    display: inline-block;
+    margin-block: 5px;
 }
